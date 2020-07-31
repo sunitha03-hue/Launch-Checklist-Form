@@ -34,24 +34,26 @@
             else
             {
                document.getElementById("faultyItems").style.visibility = "visible";
+               pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
+               copilotStatus.innerHTML = `CoPilot ${copilotName.value} is ready for launch`;
                if (fuelLevel.value < 10000)
                {
-                  pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
-                  copilotStatus.innerHTML = `CoPilot ${copilotName.value} is ready for launch`;
+                 // pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
+                //  copilotStatus.innerHTML = `CoPilot ${copilotName.value} is ready for launch`;
                   fuelStatus.innerHTML = "Fuel too low for launch";
                   launchStatus.innerHTML = "Shuttle not readyfor launch";
                   launchStatus.style.color = "red";
                } else if(cargoMass.value > 10000)
                {
-                  pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
-                  copilotStatus.innerHTML = `CoPilot ${copilotName.value} is ready for launch`;
+                //  pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
+                //  copilotStatus.innerHTML = `CoPilot ${copilotName.value} is ready for launch`;
                   cargoStatus.innerHTML = "CargoMass too high for take off";
                   launchStatus.innerHTML = "Shuttle not readyfor launch";
                   launchStatus.style.color = "red";
                } else
                {
-                  pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
-                  copilotStatus.innerHTML = `CoPilot ${copilotName.value} is ready for launch`;
+                 // pilotStatus.innerHTML = `Pilot ${pilotName.value} is ready for launch`;
+                 // copilotStatus.innerHTML = `CoPilot ${copilotName.value} is ready for launch`;
                   launchStatus.innerHTML = "Shuttle is ready for launch";
                   launchStatus.style.color = "green";
                }
